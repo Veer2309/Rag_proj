@@ -1,0 +1,586 @@
+Detailed Statistics Notes (Interview + Data Science + Machine Learning)
+Statistics is the science of collecting, organizing, analyzing, interpreting, and presenting data. It is one of the most important subjects in Data Science, Machine Learning, AI, and Analytics.
+
+1. What is Statistics?
+Statistics is a branch of mathematics that deals with data.
+It helps answer questions like:
+	•	What happened?
+	•	Why did it happen?
+	•	What is likely to happen next?
+Example
+A college wants to know the average marks of students.
+Instead of asking every student individually, statistics helps summarize the information.
+
+Types of Statistics
+1. Descriptive Statistics
+Descriptive statistics summarizes data.
+It does NOT make predictions.
+Examples
+	•	Mean
+	•	Median
+	•	Mode
+	•	Variance
+	•	Standard Deviation
+	•	Charts
+	•	Tables
+Example:
+Marks:
+45 55 60 70 80
+Instead of writing all values,
+we say
+Mean = 62
+This is descriptive statistics.
+
+2. Inferential Statistics
+Inferential statistics makes predictions about a population using a sample.
+Example
+Survey 500 voters
+Predict election result for 10 million voters.
+
+2. Population vs Sample
+Population
+Entire group.
+Example
+All students of JECRC College.
+Population Size = N
+
+Sample
+Small subset selected from population.
+Example
+200 students selected from JECRC.
+Sample Size = n
+
+Why use sample?
+Because studying every person is
+	•	expensive
+	•	time consuming
+	•	sometimes impossible
+
+3. Types of Data
+A. Qualitative (Categorical)
+Non-numerical data.
+Examples
+	•	Gender
+	•	City
+	•	Color
+	•	Department
+
+Nominal Data
+No order.
+Example
+	•	Red
+	•	Blue
+	•	Green
+
+Ordinal Data
+Has order.
+Example
+Poor
+Average
+Good
+Excellent
+
+B. Quantitative (Numerical)
+Numbers.
+Example
+Height
+Weight
+Salary
+Marks
+
+Discrete Data
+Countable values.
+Example
+	•	Number of students
+	•	Number of cars
+Possible values
+1,2,3,4...
+
+Continuous Data
+Can take any value.
+Example
+Height
+Weight
+Temperature
+23.45
+56.78
+100.12
+
+4. Levels of Measurement
+Nominal
+Labels only.
+Example
+Blood Group
+A
+B
+O
+AB
+
+Ordinal
+Ranked.
+Example
+Customer Satisfaction
+Poor
+Average
+Good
+Excellent
+
+Interval
+Equal intervals
+No true zero.
+Example
+Temperature in Celsius.
+20°C isn't twice as hot as 10°C.
+
+Ratio
+Equal interval + true zero.
+Examples
+Height
+Weight
+Age
+Income
+
+5. Measures of Central Tendency
+These represent the center of data.
+Three measures:
+	•	Mean
+	•	Median
+	•	Mode
+
+Mean (Average)
+Formula
+Mean = Sum of observations / Number of observations
+Example
+5 7 8 10
+Mean
+(5+7+8+10)/4
+
+=30/4
+
+=7.5
+Advantages
+	•	Easy
+	•	Uses all observations
+Disadvantages
+Affected by outliers.
+
+Median
+Middle value after sorting.
+Example
+5 8 10 15 100
+Median
+10
+Outlier doesn't affect median much.
+
+Even observations
+2 4 6 8
+Median
+(4+6)/2
+
+=5
+
+Mode
+Most frequent value.
+Example
+2 3 3 4 5
+Mode
+3
+Useful for categorical data.
+
+Comparison
+Mean	Median	Mode
+Average	Middle	Most frequent
+Sensitive to outliers	Resistant	Resistant
+Numerical	Numerical	Numerical/Categorical
+6. Measures of Dispersion
+Shows spread of data.
+Main measures
+	•	Range
+	•	Variance
+	•	Standard Deviation
+	•	Interquartile Range
+
+Range
+Range = Maximum - Minimum
+Example
+5 8 10 20
+
+Range =20-5=15
+Very sensitive to outliers.
+
+Variance
+Variance measures how far observations are from the mean.
+Higher variance
+→ More spread
+Lower variance
+→ Less spread
+Population Variance
+genui{"probability_statistics_learning_block":{"type_id":"VARIANCE"}}
+
+Example
+Data
+2 4 6
+Mean =4
+Deviation
+-2
+0
+2
+Square deviations
+4
+0
+4
+Variance
+(4+0+4)/3
+
+=2.67
+
+Standard Deviation
+Standard deviation is the square root of variance.
+Units remain the same as original data.
+Higher SD
+More variation.
+Lower SD
+Less variation.
+Example
+Two classes
+Class A
+50 51 49 50
+Small SD
+
+Class B
+20 50 80 100
+Large SD
+
+Empirical Rule (68–95–99.7 Rule)
+For a normal distribution:
+	•	68% of values lie within ±1 SD.
+	•	95% lie within ±2 SD.
+	•	99.7% lie within ±3 SD.
+
+7. Percentiles
+Percentile tells what percentage of observations fall below a value.
+Example
+90th percentile
+Means
+90% observations are below it.
+
+Applications
+	•	JEE Rank
+	•	CAT Percentile
+	•	GRE
+
+Quartiles
+Divide data into four equal parts.
+Q1
+25%
+Q2
+50%
+Q3
+75%
+
+Interquartile Range
+IQR = Q3 - Q1
+Useful for detecting outliers.
+
+Outliers
+Values far from rest.
+Example
+5 6 7 8 9 100
+100
+Outlier
+
+Effects
+	•	Changes mean
+	•	Increases variance
+	•	Increases SD
+
+8. Skewness
+Measures asymmetry.
+
+Positive Skew
+Tail towards right.
+Mean > Median > Mode
+Example
+Income data.
+
+Negative Skew
+Tail towards left.
+Mean < Median < Mode
+
+Symmetric Distribution
+Mean = Median = Mode
+
+9. Kurtosis
+Measures peakness.
+Types
+Mesokurtic
+Normal distribution.
+
+Leptokurtic
+Very tall peak.
+More outliers.
+
+Platykurtic
+Flat distribution.
+Fewer outliers.
+
+10. Probability
+Probability measures chance.
+0 ≤ P ≤ 1
+0
+Impossible
+1
+Certain
+
+Formula
+Probability
+
+=
+
+Favourable Outcomes
+
+/
+
+Total Outcomes
+Example
+Rolling die
+Probability of getting 4
+1/6
+
+Probability Rules
+Addition Rule
+P(A∪B)
+
+=
+
+P(A)+P(B)-P(A∩B)
+Multiplication Rule
+Independent
+P(A∩B)
+
+=
+
+P(A)×P(B)
+Conditional Probability
+P(A|B)
+Probability of A given B.
+
+Bayes Theorem
+Used heavily in Machine Learning.
+Posterior
+
+=
+
+Likelihood × Prior
+
+/
+
+Evidence
+Applications
+	•	Spam detection
+	•	Medical diagnosis
+	•	Fraud detection
+
+11. Random Variable
+Variable whose value depends on random experiment.
+Example
+Toss coin
+X
+Number of heads
+
+Types
+Discrete
+Continuous
+
+12. Probability Distribution
+Shows probability of every value.
+Examples
+	•	Bernoulli
+	•	Binomial
+	•	Poisson
+	•	Uniform
+	•	Normal
+
+13. Normal Distribution
+Bell-shaped curve.
+Properties
+	•	Mean = Median = Mode
+	•	Symmetric
+	•	Total area =1
+Applications
+	•	IQ
+	•	Heights
+	•	Exam Scores
+
+14. Z-Score
+Measures how many standard deviations a value is from the mean.
+genui{"probability_statistics_learning_block":{"type_id":"STANDARD_SCORE_Z"}}
+Interpretation:
+	•	z = 0 → Exactly at the mean
+	•	z = +2 → Two standard deviations above the mean
+	•	z = -1 → One standard deviation below the mean
+Applications:
+	•	Detecting outliers
+	•	Comparing scores from different distributions
+	•	Data normalization
+
+15. Correlation
+Measures relationship between variables.
+Range
+-1 to +1
++1
+Perfect positive
+-1
+Perfect negative
+0
+No relationship
+
+Example
+Height and Weight
+Positive
+
+Temperature and Jacket Sales
+Negative
+
+Correlation ≠ Causation
+Example
+Ice cream sales and drowning both increase in summer.
+Ice cream doesn't cause drowning.
+Summer affects both.
+
+16. Covariance
+Shows direction of relationship.
+Positive
+Variables increase together.
+Negative
+One increases
+Other decreases.
+Unlike correlation, covariance is not standardized.
+
+17. Sampling Methods
+Simple Random Sampling
+Everyone has equal chance.
+
+Systematic Sampling
+Select every kth person.
+
+Stratified Sampling
+Divide into groups.
+Sample from every group.
+
+Cluster Sampling
+Randomly select whole groups.
+
+18. Sampling Errors
+Sampling Error
+Difference between sample and population.
+
+Non-Sampling Error
+Human mistakes.
+Examples
+Wrong entry
+Measurement error
+
+19. Hypothesis Testing
+Used to test claims.
+
+Null Hypothesis (H₀)
+No difference.
+
+Alternative Hypothesis (H₁)
+Difference exists.
+
+Example
+Company claims average salary = ₹50,000
+H₀
+Salary = ₹50,000
+H₁
+Salary ≠ ₹50,000
+
+p-value
+Probability that observed result happened by chance.
+If
+p < 0.05
+Reject H₀.
+
+Type I Error
+Reject true null hypothesis.
+False Positive.
+
+Type II Error
+Accept false null hypothesis.
+False Negative.
+
+20. Confidence Interval
+Range in which true population parameter lies with a certain confidence.
+95% Confidence Interval
+Means if we repeated sampling many times, about 95% of those intervals would contain the true population parameter.
+
+21. Common Statistical Tests
+Test	Purpose
+Z-Test	Large sample mean comparison
+T-Test	Small sample mean comparison
+Chi-Square Test	Categorical data association
+ANOVA	Compare more than two means
+F-Test	Compare variances
+22. Central Limit Theorem (CLT)
+One of the most important concepts in statistics.
+It states:
+Regardless of the population distribution, if the sample size is sufficiently large (typically n ≥ 30), the distribution of sample means approaches a normal distribution.
+Why it's important:
+	•	Enables confidence intervals and hypothesis testing.
+	•	Justifies many statistical methods.
+	•	Widely used in machine learning and analytics.
+
+23. Bias vs Variance
+Bias
+	•	Error due to overly simple assumptions.
+	•	High bias → Underfitting.
+Variance
+	•	Error due to sensitivity to training data.
+	•	High variance → Overfitting.
+A good model balances both.
+
+24. Important Formulas Cheat Sheet
+Concept	Formula
+Mean	Σx / n
+Range	Max − Min
+Population Variance	Σ(x − μ)² / N
+Sample Variance	Σ(x − x̄)² / (n − 1)
+Standard Deviation	√Variance
+Probability	Favorable Outcomes / Total Outcomes
+Conditional Probability	P(A ∣ B) = P(A ∩ B) / P(B)
+Bayes' Theorem	P(A ∣ B) = P(B ∣ A) × P(A) / P(B)
+Z-Score	(x − μ) / σ
+Correlation	−1 to +1
+25. Statistics in Machine Learning
+Statistics is used throughout the ML pipeline:
+	•	Data collection and sampling
+	•	Data cleaning and preprocessing
+	•	Feature engineering
+	•	Exploratory Data Analysis (EDA)
+	•	Detecting outliers
+	•	Feature selection
+	•	Model evaluation
+	•	A/B testing
+	•	Confidence intervals
+	•	Hypothesis testing
+	•	Performance metrics and statistical significance
+
+Frequently Asked Interview Questions
+	1.	What is the difference between descriptive and inferential statistics?
+	2.	Explain population and sample with examples.
+	3.	What is the difference between variance and standard deviation?
+	4.	Why is the median preferred over the mean for skewed data?
+	5.	What is an outlier, and how does it affect statistical measures?
+	6.	Explain skewness and kurtosis.
+	7.	What is the Central Limit Theorem, and why is it important?
+	8.	What is a p-value?
+	9.	Differentiate Type I and Type II errors.
+	10.	Explain correlation versus causation.
+	11.	What is the difference between covariance and correlation?
+	12.	When would you use a Z-test instead of a T-test?
+	13.	What are confidence intervals?
+	14.	Explain different sampling methods.
+	15.	Why is statistics essential in machine learning?
+These notes cover the core statistics topics commonly expected in data science, machine learning, analytics interviews, and university coursework, progressing from basic concepts to intermediate statistical inference.

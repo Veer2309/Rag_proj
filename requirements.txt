@@ -1,0 +1,117 @@
+# ===========================
+# LLM Providers
+# ===========================
+openai
+mistralai
+
+# ===========================
+# LangChain
+# ===========================
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-text-splitters
+
+# ===========================
+# Vector Database
+# ===========================
+chromadb
+faiss-cpu
+
+# ===========================
+# Embedding Models
+# ===========================
+sentence-transformers
+tiktoken
+
+# ===========================
+# Document Loaders
+# ===========================
+pypdf
+pymupdf
+unstructured
+python-docx
+python-pptx
+openpyxl
+pandas
+markdown
+beautifulsoup4
+lxml
+
+# ===========================
+# Web Scraping
+# ===========================
+requests
+aiohttp
+
+# ===========================
+# Tokenization
+# ===========================
+nltk
+
+# ===========================
+# Environment Variables
+# ===========================
+python-dotenv
+
+# ===========================
+# API Framework
+# ===========================
+fastapi
+uvicorn
+
+# ===========================
+# Validation
+# ===========================
+pydantic
+
+# ===========================
+# Logging & Utilities
+# ===========================
+loguru
+tqdm
+
+# ===========================
+# Async Support
+# ===========================
+httpx
+
+# ===========================
+# Numerical Computing
+# ===========================
+numpy
+scipy
+
+# ===========================
+# Optional Reranking
+# ===========================
+rank-bm25
+
+# ===========================
+# Optional Local Embeddings
+# ===========================
+transformers
+torch
+accelerate
+
+# ===========================
+# Optional OCR
+# ===========================
+pytesseract
+Pillow
+
+# ===========================
+# Optional Evaluation
+# ===========================
+ragas
+datasets
+
+# ===========================
+# Development
+# ===========================
+ipykernel
+jupyter
+pytest
+black
+isort 
