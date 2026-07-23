@@ -50,13 +50,7 @@ Rag_proj/
 ## 1. Clone the Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-```
-
-Example:
-
-```bash
-git clone https://github.com/your-username/Rag_proj.git
+git clone https://github.com/Veer2309/Rag_proj/tree/main
 ```
 
 ---
