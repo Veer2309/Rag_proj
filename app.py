@@ -16,12 +16,12 @@ load_dotenv()
 
 # Streamlit Page Config
 st.set_page_config(
-    page_title="📚 RAG Book Assistant",
+    page_title="RAG Book Assistant",
     page_icon="📚",
     layout="wide"
 )
 
-st.title("📚 RAG Book Assistant")
+st.title("RAG Book Assistant")
 st.write("Upload a PDF book and ask questions from it.")
 
 # Cache Embedding Model
