@@ -11,14 +11,10 @@ from langchain_community.vectorstores import Chroma
 from langchain_mistralai import ChatMistralAI
 from langchain_core.prompts import ChatPromptTemplate
 
-# -----------------------------
 # Load Environment Variables
-# -----------------------------
 load_dotenv()
 
-# -----------------------------
 # Streamlit Page Config
-# -----------------------------
 st.set_page_config(
     page_title="📚 RAG Book Assistant",
     page_icon="📚",
@@ -28,9 +24,7 @@ st.set_page_config(
 st.title("📚 RAG Book Assistant")
 st.write("Upload a PDF book and ask questions from it.")
 
-# -----------------------------
 # Cache Embedding Model
-# -----------------------------
 @st.cache_resource
 def load_embedding_model():
     return HuggingFaceEmbeddings(
@@ -39,17 +33,13 @@ def load_embedding_model():
 
 embedding_model = load_embedding_model()
 
-# -----------------------------
 # Upload PDF
-# -----------------------------
 uploaded_file = st.file_uploader(
     "Upload a PDF Book",
     type="pdf"
 )
 
-# -----------------------------
 # Process PDF
-# -----------------------------
 if uploaded_file is not None:
 
     if st.button("Process PDF"):
@@ -86,11 +76,9 @@ if uploaded_file is not None:
 
             os.remove(pdf_path)
 
-        st.success("✅ PDF processed successfully!")
+        st.success("PDF processed successfully!")
 
-# -----------------------------
 # Ask Questions
-# -----------------------------
 if os.path.exists("chroma_db"):
 
     vectorstore = Chroma(
